@@ -55,59 +55,61 @@ Welcome to the **Collaborative Task Management System**! This project is designe
 collaborative-task-management-system/
 
 
-backend
-│── package-lock.json
-│── package.json
-│── readme.md
-└── src
-    ├── controllers
-    │   ├── projectController.js
-    │   ├── taskController.js
-    │   ├── userController.js
-    ├── middleware
-    │   ├── auth.js
-    ├── models
-    │   ├── Project.js
-    │   ├── Task.js
-    │   ├── User.js
-    ├── routes
-    │   ├── projectRoutes.js
-    │   ├── taskRoutes.js
-    │   ├── userRoutes.js
-    ├── server.js
+collaborative-task-management-system/
+├── backend/
+│   ├── package-lock.json        # Locks versions of backend dependencies.
+│   ├── package.json             # Lists backend project metadata and dependencies.
+│   ├── readme.md                # Documentation for backend setup and usage.
+│   └── src/                     # Source code for the backend.
+│       ├── controllers/         # Manages business logic.
+│       │   ├── projectController.js # Handles project operations.
+│       │   ├── taskController.js    # Manages task-related actions.
+│       │   └── userController.js    # Manages user authentication and profiles.
+│       ├── middleware/          # Contains middleware functions.
+│       │   └── auth.js          # Handles authentication processes.
+│       ├── models/              # Defines data schemas.
+│       │   ├── Project.js       # Schema for project data.
+│       │   ├── Task.js          # Schema for task data.
+│       │   └── User.js          # Schema for user data.
+│       ├── routes/              # Defines API endpoints.
+│       │   ├── projectRoutes.js  # Routes for project APIs.
+│       │   ├── taskRoutes.js     # Routes for task APIs.
+│       │   └── userRoutes.js     # Routes for user APIs.
+│       └── server.js            # Initializes the server and database connection.
+│
+└── frontend/
+    ├── eslint.config.js         # Configuration for ESLint.
+    ├── index.html               # Main HTML file for the web app.
+    ├── package-lock.json        # Locks versions of frontend dependencies.
+    ├── package.json             # Lists frontend project metadata and dependencies.
+    ├── public/                  # Contains static assets.
+    │   └── vite.svg             # Logo for Vite.
+    ├── readme                   # Documentation for frontend setup and usage.
+    └── src/                     # Source code for the frontend.
+        ├── App.css              # Styles for the main application.
+        ├── App.jsx              # Main application component.
+        ├── index.css            # Global styles.
+        ├── main.jsx             # Entry point for the React application.
+        ├── assets/               # Contains images and icons.
+        │   └── react.svg        # React logo.
+        ├── components/           # Reusable UI components.
+        │   ├── Layout.jsx        # Overall layout structure.
+        │   ├── PrivateRoute.jsx  # Protects routes for authenticated users.
+        │   └── ProjectMembers.jsx # Displays project member information.
+        ├── context/              # Contains context APIs for state management.
+        │   └── AuthContext.jsx   # Manages authentication state.
+        ├── pages/                # Individual pages of the application.
+        │   ├── Dashboard.jsx     # Overview of projects and tasks.
+        │   ├── Login.jsx         # User login page.
+        │   ├── Profile.jsx       # Displays user profile.
+        │   ├── ProjectDetail.jsx # Details of a specific project.
+        │   ├── ProjectList.jsx   # Lists all user projects.
+        │   ├── Register.jsx      # User registration page.
+        │   ├── TaskBoard.jsx     # Visual task management board.
+        │   ├── TaskDetail.jsx    # Details of a specific task.
+        │   └── TaskForm.jsx      # Form for creating/editing tasks.
+    └── vite.config.js           # Configuration for Vite build tool.
 
-frontend
-│── eslint.config.js
-│── index.html
-│── package-lock.json
-│── package.json
-│── public
-│   └── vite.svg
-│── readme
-│── src
-│   │── App.css
-│   │── App.jsx
-│   │── index.css
-│   │── main.jsx
-│   │── assets
-│   │   └── react.svg
-│   │── components
-│   │   ├── Layout.jsx
-│   │   ├── PrivateRoute.jsx
-│   │   └── ProjectMembers.jsx
-│   │── context
-│   │   └── AuthContext.jsx
-│   │── pages
-│   │   ├── Dashboard.jsx
-│   │   ├── Login.jsx
-│   │   ├── Profile.jsx
-│   │   ├── ProjectDetail.jsx
-│   │   ├── ProjectList.jsx
-│   │   ├── Register.jsx
-│   │   ├── TaskBoard.jsx
-│   │   ├── TaskDetail.jsx
-│   │   └── TaskForm.jsx
-│── vite.config.js
 
 
 ---
