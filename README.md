@@ -55,7 +55,6 @@ Welcome to the **Collaborative Task Management System**! This project is designe
 collaborative-task-management-system/
 
 
-collaborative-task-management-system/
 ├── backend/
 │   ├── package-lock.json        # Locks versions of backend dependencies.
 │   ├── package.json             # Lists backend project metadata and dependencies.
@@ -144,7 +143,7 @@ collaborative-task-management-system/
 4. **Set Up Environment Variables**
    - Create a `.env` file in the `backend` directory:
      ```env
-     MONGO_URI=mongodb://localhost:27017/task_management
+     MONGO_URI=your_mongodb_connection_string
      JWT_SECRET=your_jwt_secret
      PORT=5000
      ```
@@ -166,25 +165,95 @@ collaborative-task-management-system/
 
 ---
 
+Here’s the updated **API Documentation** section in proper code format for easy readability. You can directly paste this into your README file:
+
+---
+
 ## 📄 **API Documentation**
 
 ### **User Endpoints**
-- **Create User**: `POST /api/users`
-- **Retrieve User Details**: `GET /api/users/:id`
-- **Assign Users to Projects**: `POST /api/projects/:projectId/users`
 
-### **Project Endpoints**
-- **Create Project**: `POST /api/projects`
-- **Add/Remove Users from Project**: `PUT /api/projects/:projectId/users`
-- **Retrieve Project Details**: `GET /api/projects/:id`
+#### **Authentication**
+```plaintext
+POST /api/users/register
+- Validates user registration details and creates a new user.
+
+POST /api/users/login
+- Authenticates the user and returns a token for accessing protected routes.
+```
+
+#### **Profile Management**
+```plaintext
+GET /api/users/profile
+- Retrieves the authenticated user's profile details.
+
+PATCH /api/users/profile
+- Updates the authenticated user's profile details.
+```
+
+#### **Project Member Management**
+```plaintext
+GET /api/users/available
+- Retrieves a list of users available to be added to a project.
+```
+
+#### **Admin-Only Routes**
+```plaintext
+GET /api/users/users
+- Retrieves a list of all users (accessible only to Admins).
+
+PATCH /api/users/:userId/role
+- Updates the role of a specific user (accessible only to Admins).
+
+DELETE /api/users/:userId
+- Deletes a specific user (accessible only to Admins).
+```
+
+---
 
 ### **Task Endpoints**
-- **Create Task**: `POST /api/tasks`
-- **Retrieve Tasks by User/Project**: `GET /api/tasks?userId=:userId&projectId=:projectId`
-- **Update Task Status**: `PUT /api/tasks/:id/status`
-- **Comment on Tasks**: `POST /api/tasks/:id/comments`
-- **Attach Files to Tasks**: `POST /api/tasks/:id/attachments`
-- **Download Project Summary Report**: `GET /api/projects/:id/report`
+
+#### **Task Management**
+```plaintext
+POST /api/tasks
+- Creates a new task with validated details.
+
+GET /api/tasks/project/:projectId
+- Retrieves all tasks associated with a specific project.
+
+GET /api/tasks/user
+- Retrieves all tasks assigned to the authenticated user.
+
+GET /api/tasks/:taskId
+- Retrieves details of a specific task.
+
+PATCH /api/tasks/:taskId
+- Updates the details of a specific task.
+
+PATCH /api/tasks/:taskId/status
+- Updates the status of a specific task.
+
+DELETE /api/tasks/:taskId
+- Deletes a specific task.
+```
+
+#### **Task Comments**
+```plaintext
+POST /api/tasks/:taskId/comments
+- Adds a comment to a specific task.
+```
+
+#### **Task Attachments**
+```plaintext
+POST /api/tasks/:taskId/attachments
+- Uploads and attaches a file to a specific task.
+```
+
+#### **Task Statistics**
+```plaintext
+GET /api/tasks/project/:projectId/stats
+- Retrieves statistics for tasks within a specific project.
+```
 
 ---
 
