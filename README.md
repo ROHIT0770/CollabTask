@@ -259,18 +259,18 @@ GET /api/tasks/project/:projectId/stats
 
 ## 🎨 **Frontend Screenshots**
 
-### **Login Page**
+
 ![Login Page]
 ![WhatsApp Image 2025-03-07 at 16 04 13_56926f2a](https://github.com/user-attachments/assets/be068596-fd3c-4478-a83d-1b0053a34857)
 
-### **User Dashboard**
-![User Dashboard](https://via.placeholder.com/600x400?text=User+Dashboard)
+![WhatsApp Image 2025-03-07 at 16 03 54_491fd140](https://github.com/user-attachments/assets/faed5b7d-e729-4ab4-86cf-a5b96901b8b2)
 
-### **Task Board**
-![Task Board](https://via.placeholder.com/600x400?text=Task+Board)
+![WhatsApp Image 2025-03-07 at 16 03 54_90696b10](https://github.com/user-attachments/assets/e002c147-4d16-42ed-8947-4f8524db9e46)
 
-### **Task Details Page**
-![Task Details](https://via.placeholder.com/600x400?text=Task+Details)
+![WhatsApp Image 2025-03-07 at 16 03 54_b0efcfe1](https://github.com/user-attachments/assets/33370de9-d307-40c5-bc8a-baf675131e35)
+![WhatsApp Image 2025-03-07 at 16 03 55_3f365973](https://github.com/user-attachments/assets/1a855d57-80ac-4132-a4cf-640935f51583)
+
+![WhatsApp Image 2025-03-07 at 16 04 13_df444648](https://github.com/user-attachments/assets/828223a0-1e6d-41ef-a713-04ad3a9527dc)
 
 ---
 
