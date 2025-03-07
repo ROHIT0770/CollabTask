@@ -151,7 +151,7 @@ collaborative-task-management-system/
 5. **Run the Backend Server**
    ```bash
    cd ../backend
-   npm start
+   npm run dev
    ```
 
 6. **Run the Frontend Server**
@@ -260,7 +260,8 @@ GET /api/tasks/project/:projectId/stats
 ## 🎨 **Frontend Screenshots**
 
 ### **Login Page**
-![Login Page](https://via.placeholder.com/600x400?text=Login+Page)
+![Login Page]
+![WhatsApp Image 2025-03-07 at 16 04 13_56926f2a](https://github.com/user-attachments/assets/be068596-fd3c-4478-a83d-1b0053a34857)
 
 ### **User Dashboard**
 ![User Dashboard](https://via.placeholder.com/600x400?text=User+Dashboard)
